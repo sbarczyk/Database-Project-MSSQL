@@ -1,36 +1,51 @@
-# AGH-Database-Project-MSSQL
+# System Zarządzania Kursami i Szkoleniami — Projekt Baz Danych (MS SQL)
+
+Projekt akademicki realizowany w ramach przedmiotu **Systemy Baz Danych** na **Akademii Górniczo-Hutniczej w Krakowie (Wydział Informatyki)**.  
+Celem projektu było zaprojektowanie oraz implementacja relacyjnego systemu bazodanowego dla firmy oferującej różne formy kursów i szkoleń — zarówno stacjonarnych, jak i online.
 
 ## Opis projektu
-Projekt akademicki zrealizowany w ramach przedmiotu **Bazy Danych** na **Akademii Górniczo-Hutniczej w Krakowie**, na **Wydziale Informatyki**.  
-Celem projektu było zaprojektowanie i zaimplementowanie kompletnego relacyjnego systemu bazodanowego w środowisku **Microsoft SQL Server**.  
-Projekt obejmował pełen cykl tworzenia bazy danych – od modelowania danych, przez implementację, aż po testowanie zapytań i procedur składowanych.
 
-## Cele i zakres projektu
-- Analiza wymagań i projekt koncepcyjny systemu baz danych.  
-- Opracowanie modelu ERD (Entity Relationship Diagram).  
-- Implementacja modelu w środowisku **MS SQL Server**.  
-- Tworzenie zapytań SQL, widoków, procedur składowanych i wyzwalaczy.  
-- Testowanie poprawności działania bazy danych oraz integralności danych.  
+System obejmuje kompleksowy model obsługi kursów, webinarów oraz studiów podyplomowych, uwzględniający m.in.:
+- różne formy zajęć (stacjonarne, online synchroniczne, online asynchroniczne, hybrydowe),
+- zarządzanie uczestnikami, prowadzącymi i tłumaczami,
+- obsługę płatności (z integracją z zewnętrznym systemem),
+- generowanie raportów finansowych i organizacyjnych,
+- kontrolę frekwencji oraz możliwość odrabiania nieobecności,
+- mechanizmy ról i uprawnień użytkowników,
+- zapewnienie integralności i spójności danych poprzez **triggery**, **procedury składowane** oraz **widoki**.
 
-## Technologie i narzędzia
-- **Microsoft SQL Server**  
-- **SQL Management Studio (SSMS)**  
-- **Draw.io / dbdiagram.io** – modelowanie schematu bazy  
-- **GitHub** – kontrola wersji i dokumentacja projektu  
+Projekt został w pełni zrealizowany przy użyciu **Microsoft SQL Server**.
 
-## Czego się nauczyłem
-W trakcie realizacji projektu zdobyłem praktyczne doświadczenie w:
-- projektowaniu i implementacji relacyjnych baz danych,  
-- tworzeniu i optymalizacji zapytań SQL,  
-- stosowaniu zasad normalizacji danych,  
-- implementacji procedur, funkcji i wyzwalaczy,  
-- pracy zespołowej nad wspólną strukturą bazy danych,  
-- dokumentowaniu projektów technicznych w repozytorium GitHub.  
+## Kluczowe elementy
 
-## Autor
-**Szymon Barczyk**  
+- **Schemat bazy danych**: pełny diagram encji z opisem tabel i kluczy obcych.  
+- **Integralność danych**: zastosowanie ograniczeń, wartości domyślnych i unikalnych indeksów.  
+- **Widoki i raporty**: raporty finansowe, listy obecności, analiza frekwencji, bilokacja uczestników.  
+- **Procedury i triggery**: logika biznesowa zapewniająca spójność danych i automatyzację operacji.  
+- **Uprawnienia**: system ról (administrator, wykładowca, uczestnik) z różnymi poziomami dostępu.  
+
+## Technologie
+
+- **Microsoft SQL Server**
+- **T-SQL**
+- **SQL Server Management Studio (SSMS)**
+
+## Autorzy
+
+- **Szymon Barczyk**  
+- **Jan Dyląg**  
+- **Maciej Trznadel**  
+
 Akademia Górniczo-Hutnicza w Krakowie  
-Wydział Informatyki  
+Wydział Informatyki
 
-## Licencja
-Projekt akademicki stworzony w celach edukacyjnych.
+## Cel projektu
+
+Projekt stanowił podsumowanie praktycznych umiejętności w zakresie projektowania i implementacji relacyjnych baz danych, w tym:
+- analizy wymagań systemowych,  
+- projektowania złożonych schematów danych,  
+- optymalizacji zapytań i struktury indeksów,  
+- implementacji zaawansowanej logiki biznesowej w SQL.  
+
+Dzięki rozbudowanemu modelowi i realistycznym założeniom biznesowym projekt odzwierciedla rzeczywiste wyzwania inżynierii danych w środowisku komercyjnym.
+
